@@ -6,19 +6,37 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct ContentView: View {
+	@Environment(\.modelContext) var modelContext
+	@Query(sort: \Singleton.id) private var singletons: [Singleton]
+	
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+			if !singletons.isEmpty {
+				EditSingletonView(singleton: singletons.first!)
+			} else {
+				Text("!!!!")
+			}
         }
         .padding()
+		.onAppear {
+			onAppear()
+		}
     }
+	
+	func onAppear() {
+		if singletons.isEmpty {
+			modelContext.insert(Singleton(id: "New Item"))
+		}
+	}
 }
 
 #Preview {
-    ContentView()
+	let config = ModelConfiguration(isStoredInMemoryOnly: true)
+	let container = try! ModelContainer(for: Singleton.self, configurations: config)
+    return ContentView()
+		.modelContainer(container)
 }
+

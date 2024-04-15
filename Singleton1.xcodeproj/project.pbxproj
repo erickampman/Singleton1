@@ -14,6 +14,9 @@
 		E45280C72BCC6AEB002FC7D3 /* Singleton1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45280C62BCC6AEB002FC7D3 /* Singleton1Tests.swift */; };
 		E45280D12BCC6AEB002FC7D3 /* Singleton1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45280D02BCC6AEB002FC7D3 /* Singleton1UITests.swift */; };
 		E45280D32BCC6AEB002FC7D3 /* Singleton1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45280D22BCC6AEB002FC7D3 /* Singleton1UITestsLaunchTests.swift */; };
+		E45280E02BCC6AFD002FC7D3 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45280DF2BCC6AFD002FC7D3 /* Singleton.swift */; };
+		E45280E22BCC71BB002FC7D3 /* EditSingletonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45280E12BCC71BB002FC7D3 /* EditSingletonView.swift */; };
+		E45280E42BCD613C002FC7D3 /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = E45280E32BCD613C002FC7D3 /* Readme.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,9 @@
 		E45280CC2BCC6AEB002FC7D3 /* Singleton1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Singleton1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E45280D02BCC6AEB002FC7D3 /* Singleton1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton1UITests.swift; sourceTree = "<group>"; };
 		E45280D22BCC6AEB002FC7D3 /* Singleton1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton1UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E45280DF2BCC6AFD002FC7D3 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
+		E45280E12BCC71BB002FC7D3 /* EditSingletonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditSingletonView.swift; sourceTree = "<group>"; };
+		E45280E32BCD613C002FC7D3 /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +81,7 @@
 		E45280A82BCC6AEA002FC7D3 = {
 			isa = PBXGroup;
 			children = (
+				E45280E32BCD613C002FC7D3 /* Readme.md */,
 				E45280B32BCC6AEA002FC7D3 /* Singleton1 */,
 				E45280C52BCC6AEB002FC7D3 /* Singleton1Tests */,
 				E45280CF2BCC6AEB002FC7D3 /* Singleton1UITests */,
@@ -97,6 +104,8 @@
 			children = (
 				E45280B42BCC6AEA002FC7D3 /* Singleton1App.swift */,
 				E45280B62BCC6AEA002FC7D3 /* ContentView.swift */,
+				E45280DF2BCC6AFD002FC7D3 /* Singleton.swift */,
+				E45280E12BCC71BB002FC7D3 /* EditSingletonView.swift */,
 				E45280B82BCC6AEB002FC7D3 /* Assets.xcassets */,
 				E45280BA2BCC6AEB002FC7D3 /* Singleton1.entitlements */,
 				E45280BB2BCC6AEB002FC7D3 /* Preview Content */,
@@ -235,6 +244,7 @@
 			files = (
 				E45280BD2BCC6AEB002FC7D3 /* Preview Assets.xcassets in Resources */,
 				E45280B92BCC6AEB002FC7D3 /* Assets.xcassets in Resources */,
+				E45280E42BCD613C002FC7D3 /* Readme.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +270,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E45280B72BCC6AEA002FC7D3 /* ContentView.swift in Sources */,
+				E45280E02BCC6AFD002FC7D3 /* Singleton.swift in Sources */,
+				E45280E22BCC71BB002FC7D3 /* EditSingletonView.swift in Sources */,
 				E45280B52BCC6AEA002FC7D3 /* Singleton1App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
